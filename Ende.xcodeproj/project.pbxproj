@@ -173,7 +173,6 @@
 					};
 					02C7925D1AC7C6C000DE432D = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 02C792481AC7C6BF00DE432D;
 					};
 				};
 			};
@@ -369,7 +368,6 @@
 		02C7926C1AC7C6C000DE432D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -381,14 +379,12 @@
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = EndeTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto.app/Crypto";
 			};
 			name = Debug;
 		};
 		02C7926D1AC7C6C000DE432D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -396,7 +392,6 @@
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = EndeTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crypto.app/Crypto";
 			};
 			name = Release;
 		};
