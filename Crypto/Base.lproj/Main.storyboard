@@ -261,16 +261,6 @@ To Decrypt: Enter the encryption and the key into the boxes, then press "Decry
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-iO-OdV">
-                                <rect key="frame" x="0.0" y="296" width="600" height="33"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Decrypt">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="decryptButtonPress:" destination="mkW-IW-mM9" eventType="touchUpInside" id="Asr-tf-rZe"/>
-                                </connections>
-                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cTI-aj-wn5">
                                 <rect key="frame" x="180" y="373" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
@@ -289,6 +279,16 @@ To Decrypt: Enter the encryption and the key into the boxes, then press "Decry
                                 </state>
                                 <connections>
                                     <action selector="clearButtonPress:" destination="mkW-IW-mM9" eventType="touchUpInside" id="avk-mG-dkG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fo-iO-OdV">
+                                <rect key="frame" x="0.0" y="295" width="600" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Decrypt">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="decryptButtonPress:" destination="mkW-IW-mM9" eventType="touchUpInside" id="Asr-tf-rZe"/>
                                 </connections>
                             </button>
                         </subviews>
