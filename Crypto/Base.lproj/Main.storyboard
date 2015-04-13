@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="the app to encrypt and decrypt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-Lt-u57">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="the app to encrypt and decrypt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYS-Lt-u57">
                                 <rect key="frame" x="0.0" y="194" width="600" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -29,12 +29,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-QE-SQv">
-                                <rect key="frame" x="180" y="38" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="tHx-jH-gQ6"/>
-                                </constraints>
-                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" misplaced="YES" scrollEnabled="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URb-sP-bZN">
                                 <rect key="frame" x="155" y="236" width="316" height="297"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -46,15 +40,23 @@ To Decrypt: Enter the encryption and the key into the boxes, then press "Decry
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RY9-QE-SQv">
+                                <rect key="frame" x="180" y="38" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="P87-Pm-3qj"/>
+                                    <constraint firstAttribute="width" constant="240" id="UPj-s8-I7s"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="fYS-Lt-u57" firstAttribute="top" secondItem="RY9-QE-SQv" secondAttribute="bottom" constant="28" id="3f6-ZN-7l5"/>
+                            <constraint firstItem="RY9-QE-SQv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="6AF-nO-wkE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fYS-Lt-u57" secondAttribute="trailing" id="9rs-K2-mDr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="URb-sP-bZN" secondAttribute="trailing" constant="25" id="Hz2-r2-0pE"/>
+                            <constraint firstItem="RY9-QE-SQv" firstAttribute="centerX" secondItem="fYS-Lt-u57" secondAttribute="centerX" id="PYb-br-zJx"/>
                             <constraint firstItem="URb-sP-bZN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="QaL-vC-TUz"/>
                             <constraint firstItem="fYS-Lt-u57" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="bF2-rZ-LRv"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="RY9-QE-SQv" secondAttribute="trailing" constant="25" id="mDH-Ff-TtH"/>
-                            <constraint firstItem="RY9-QE-SQv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="25" id="p0b-ZG-NI7"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Instructions" image="endeTabBar" selectedImage="ende" id="FrY-Yc-eJc"/>
